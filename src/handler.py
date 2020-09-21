@@ -1,12 +1,8 @@
 import logging
 import os
 
-api_key = os.environ["GAIA_API_KEY"]
-api_secret = os.environ["GAIA_API_SECRET"]
-
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("skill")
-
 
 def evaluate(payload: dict, context: dict) -> dict:
     """
