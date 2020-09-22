@@ -4,6 +4,7 @@ import os
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("skill")
 
+
 def evaluate(payload: dict, context: dict) -> dict:
     """
     Uses an environment variable to choose which manipulation method should be used.
@@ -27,7 +28,9 @@ def evaluate(payload: dict, context: dict) -> dict:
 
 
 def on_started(context):
-    log.info("on_started triggered")
+    log.info("on_started triggered with environment")
+    for k, v in os.environ.items():
+        log.info(k, v, sep="=")
 
 
 class StringManipulator:
