@@ -30,7 +30,7 @@ def evaluate(payload: dict, context: dict) -> dict:
 def on_started(context):
     log.info("on_started triggered with environment")
     for k, v in os.environ.items():
-        print(k, v, sep="=")
+        log.info("%s=%s",k,v)
 
 
 class StringManipulator:
