@@ -17,6 +17,7 @@ def evaluate(payload: dict, context: dict) -> dict:
     manipulation_method = os.environ.get("MANIPULATION_METHOD")
 
     request = payload["request"]
+    log.info("Received request: %s", request)
 
     if manipulation_method == "UPPER":
         return {'response': StringManipulator.upper(request)}
