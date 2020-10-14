@@ -28,9 +28,8 @@ properties:
     desc: "Configures how the skill manipulates requests"
     default: "UPPER"
     pattern: "(UPPER|LOWER|CAPITALIZE)"
-  - name: "ANTOHER_PROPERTY"
+  - name: "ANOTHER_PROPERTY"
     desc: "Just a placeholder"
-    default: "TEST"
 
 contract: ["./demo"]
 composable: true
