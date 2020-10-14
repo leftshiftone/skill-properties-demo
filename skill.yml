@@ -30,6 +30,7 @@ properties:
     pattern: "(UPPER|LOWER|CAPITALIZE)"
   - name: "ANOTHER_PROPERTY"
     desc: "Just a placeholder"
+    required: true
 
 contract: ["./demo"]
 composable: true
