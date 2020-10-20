@@ -23,6 +23,7 @@ resources:
     min: 150
   memory:
     min: 256
+
 properties:
   - name: "MANIPULATION_METHOD"
     desc: "Configures how the skill manipulates requests"
@@ -30,7 +31,6 @@ properties:
     pattern: "(UPPER|LOWER|CAPITALIZE)"
   - name: "ANOTHER_PROPERTY"
     desc: "Just a placeholder"
-    required: true
 
 contract: ["./demo"]
 composable: true
